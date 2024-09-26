@@ -1,0 +1,163 @@
+body {
+  margin: 10px;
+  background-color: rgb(209, 209, 209);
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  background-color: forestgreen;
+  color: aliceblue;
+  border: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+  align-self: center;
+}
+
+button:hover {
+  background-color: rgb(38, 158, 38);
+}
+
+table {
+  width: 66%;
+  border-collapse: collapse;
+  margin: auto;
+  border: 1px solid;
+  padding-left: 100px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+th,td,tr {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 10cap;
+  margin: auto;
+}
+
+#lastName,
+#name[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#name {
+  width: 100%;
+  align-self: normal;
+}
+
+#lastName {
+  width: 100%;
+  align-self: normal;
+}
+
+#nameLabel {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: normal;
+}
+
+#lastNameLabel {
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: normal;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  background-color: rgb(209, 209, 209);
+  height: 100vh;
+  margin: 0;
+}
+
+.sendForm {
+  flex: 30%;
+  padding-left: 10px;
+  background-color: rgb(11, 165, 236);
+  height: 50vh;
+  margin-right: 10px;
+  box-shadow: 5px 5px 10px rgb(68, 68, 68);
+  border-block-start-style: dotted;
+  border-block-start-width: 12px;
+  border-block-start-color: rgb(206, 206, 206);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.showForm {
+  flex: 60%;
+  background-color: rgb(11, 165, 236);
+  height: 50vh;
+  margin-left: 10px;
+  box-shadow: 5px 5px 10px rgb(68, 68, 68);
+  border-block-start-style: dotted;
+  border-block-start-width: 12px;
+  border-block-start-color: rgb(206, 206, 206);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#pagination {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#pagination button {
+  padding: 5px 5px;
+  margin: 0 5px;
+  background-color: forestgreen;
+  cursor: pointer;
+  width: 70px;
+}
+
+#pagination button:disabled {
+  background-color: #ccc;
+  color: black;
+  cursor: not-allowed;
+}
+
+#pageNumber {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.searchTable {
+  display: flex;
+  justify-content: flex-end;
+  /* Alinea el contenido a la derecha */
+  margin-bottom: 10px;
+  /* Espacio entre el campo de búsqueda y la tabla */
+}
+
+#searchInput {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  justify-content: flex-end;
+  border-radius: 4px;
+  width: 200px;
+  /* Ajusta el ancho del campo de búsqueda */
+}

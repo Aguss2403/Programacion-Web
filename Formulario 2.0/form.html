@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="sendForm">
+            <h2>Formulario</h2>
+            <form onsubmit="addStudents(event)">
+                <label for="name" id="nameLabel">Nombre:</label>
+                <input type="text" id="name" name="name" required
+                    placeholder="Nombre">
+
+                <label for="lastName" id="lastNameLabel">Apellido:</label>
+                <input type="text" id="lastName" name="lastName" required
+                    placeholder="Apellido">
+
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+
+        <div class="showForm">
+
+            <h3>Registrados</h3>
+
+            <div class="searchTable">
+                <input type="text" id="searchInput" placeholder="Buscar..."
+                    onkeyup="searchTable()">
+            </div>
+            <table id="datos">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                </thead>
+                <tbody id="bodytable"></tbody>
+            </table>
+
+            <div id="pagination">
+                <button id="prevPage" onclick="changePage(-1)"
+                    disabled>Anterior</button>
+                <span id="pageNumber"></span>
+                <button id="nextPage" onclick="changePage(1)"
+                    disabled>Siguiente</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

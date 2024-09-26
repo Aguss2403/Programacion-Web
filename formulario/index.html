@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class = sendForm>
+            <h2>Formulario</h2>
+            <form onsubmit="addStudents(event)">
+            <label for="name" id = "nameLabel">Nombre:</label>
+            <input type="text" id="name" name="name" required placeholder="Nombre">
+
+            <label for="lastName" id = "lastNameLabel">Apellido:</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Apellido" >
+
+            <button type="submit">Guardar</button>
+            </form>
+        </div>
+
+        <div class = showForm>
+            <h3>Registrados</h3>
+            <table id="datos">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                </thead>
+                <tbody id="bodytabla"></tbody>
+            </table>
+        </div>
+        
+
+        
+    </div>
+
+    <script src="form.js"></script>
+
+</body>
+</html>
+
+<!-- les dejo por escrito la tarea que deben hacer
+ para la semana que viene: crear una pagina,
+ que posea un formulario con dos campos de texto,
+ name y lastName, al hacer click en un boton guardar,
+ con Javascript se debe recuperar los datos de los campos de textos,
+ y agregarlos dinamicamente en una tabla>
+ 
