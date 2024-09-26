@@ -9,11 +9,13 @@ const create = (career) => {
     const newCareer = {
         id: careers.length + 1,
         name: career.name,
-        accredited: career.accredited !== undefined ? career.accredited : true 
+        accredited: career.accredited !== undefined ? career.accredited : true, // Por defecto true
+        levels: []
     };
     careers.push(newCareer);
     return newCareer;
 };
+
 
 const findById = (id) => {
     return careers.find(career => career.id == id && career.accredited);  
